@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulario de Registro</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-5">
+    <h2 class="mb-4 text-center">Registro de Usuario</h2>
+    <form id="registroForm">
+      
+      <!-- Nombre completo -->
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" name="nombre" required>
+        <div class="invalid-feedback">Por favor, ingresa un nombre válido.</div>
+      </div>
+
+      <!-- Correo electrónico -->
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" name="email" required>
+        <div class="invalid-feedback">Ingresa un correo electrónico válido.</div>
+      </div>
+
+      <!-- Contraseña -->
+      <div class="mb-3">
+        <label for="contrasena" class="form-label">Contraseña</label>
+        <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+        <div class="invalid-feedback">La contraseña debe tener mínimo 8 caracteres, una mayúscula, un número y un símbolo.</div>
+      </div>
+
+      <!-- Confirmar contraseña -->
+      <div class="mb-3">
+        <label for="confirmarContrasena" class="form-label">Confirmar contraseña</label>
+        <input type="password" class="form-control" id="confirmarContrasena" name="confirmarContrasena" required>
+        <div class="invalid-feedback">Las contraseñas no coinciden.</div>
+      </div>
+
+      <!-- Fecha de nacimiento -->
+      <div class="mb-3">
+        <label for="fechaNacimiento" class="form-label">Fecha de nacimiento</label>
+        <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" required>
+        <div class="invalid-feedback">Ingresa una fecha válida.</div>
+      </div>
+
+      <!-- Género -->
+      <div class="mb-3">
+        <label for="genero" class="form-label">Género</label>
+        <select class="form-select" id="genero" name="genero" required>
+          <option value="">Selecciona una opción</option>
+          <option value="Masculino">Masculino</option>
+          <option value="Femenino">Femenino</option>
+          <option value="Otro">Otro</option>
+        </select>
+        <div class="invalid-feedback">Selecciona tu género.</div>
+      </div>
+
+      <!-- País -->
+      <div class="mb-3">
+        <label for="pais" class="form-label">País</label>
+        <select class="form-select" id="pais" name="pais" required>
+          <option value="">Cargando países...</option>
+        </select>
+        <div class="invalid-feedback">Selecciona un país válido.</div>
+      </div>
+
+      <!-- Aceptar términos -->
+      <div class="form-check mb-3">
+        <input class="form-check-input" type="checkbox" id="terminos" name="terminos" required>
+        <label class="form-check-label" for="terminos">
+          Acepto los <a href="#">términos y condiciones</a>
+        </label>
+        <div class="invalid-feedback">Debes aceptar los términos para continuar.</div>
+      </div>
+
+      <!-- Botón de enviar -->
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Registrar</button>
+      </div>
+    </form>
+
+    <!-- Área para mensajes -->
+    <div id="alerta" class="mt-4"></div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
