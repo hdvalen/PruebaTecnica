@@ -1,11 +1,3 @@
-===========================
-Formulario de Registro de Usuario
-===========================
-
-Este proyecto es una aplicación web simple que permite registrar usuarios mediante un 
-formulario con validaciones del lado del cliente y del servidor. Además, incluye la carga 
-dinámica de países usando JavaScript y PHP.
-
 ------------
 REQUISITOS
 ------------
